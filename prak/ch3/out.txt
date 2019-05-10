@@ -1,0 +1,30 @@
+
+ Exercise I a
+ Int_Max = 2147483647
+max int while = 2147483647
+max int for = 2147483647
+max int do while = 2147483647
+ 
+
+ Exercise I b
+ Int_Min=-2147483648
+min int while = -2147483648
+min int for = -2147483648
+min int do while= -2147483648
+ 
+
+ Exercise I c
+ DBL_EPSILON=2.22045e-16
+double epsilon while=2.22045e-16
+double epsilon do while=2.22045e-16
+double epsilon for=2.22045e-16
+FLT_EPSILON=1.19209e-07
+float epsilon while=1.19209e-07
+float epsilon do while=1.19209e-07
+float epsilon for=1.19209e-07
+LBDL_EPSILON=1.0842e-19
+long double epsilon while=1.0842e-19
+long double epsilon do while=1.0842e-19
+long double epsilon for=1.0842e-19
+Sum = 14.4037
+Sum2 = 19.8079

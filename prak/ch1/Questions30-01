@@ -1,0 +1,43 @@
+Questions in PrakProg: 1
+How do you search your man-pages for a given keyword?
+A: When in the manual page, type "/[search term]". If there are multiple search results, they will all be highlighted, and to go to the next occurence, press "n", and to go to previous occurence press shift+n ("N"). 
+    
+	
+Suppose you need to type the command 'basename'. Which characters do you need to type in your system before command-line completion can complete your typing?
+A: "basen" (then press 'tab')
+
+
+In many systems command-line completion can also complete long options to many POSIX utilities. Does your shell completes long options? Suppose you need to type the command mkdir --parents. Which characters do you need to actually type when using command-line completion?
+A: "mkdi" (tab), then "--p" (tab) 
+
+
+
+How do you create a folder with a subfolder (say prog/hello)? Hint: man mkdir | grep -B1 "make parent".
+A: "mkdir -p prog/hello" (-p = make parent directories if they don't already exist)
+
+
+
+Which option instructs the rm command to ask the user for a confirmation before every removal? Hint: man rm|grep "prompt before".
+A: "rm -i *files*" (-i= prompt before every removal)
+
+
+Which option instructs the rm command to remove a folder with all subfolders? Hint: man rm|grep -B1 "remove directories".
+A: "rm -r *directory*" (-r = recursive, remove directories and their contents recursively)
+
+
+Which unix command lists the files in a directory in one column sorted by modification time with the newest last?
+A: "ls -cltr" (c = sort, l = long listing format, t = sort by mod. time, r = reverse)
+
+
+What do symbols ., .., ~ mean in the context of the unix file utilities?
+A: . = current directory, .. = parent directory, ~ = home directory
+
+
+Where will the command cd without any arguments lead you?
+To the home directory, same as cd ~
+
+
+What is your home directory? Name also alternative notations. 
+"root directory" 	
+
+

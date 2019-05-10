@@ -1,0 +1,34 @@
+What is the 'main' function?
+The 'main' function is a bit like the 'run' button in matlab, it runs the entire code, that is, all the parts you tell it to run. It follows "recipies", and has "ingredients".
+
+ 
+What is compilation and linking (of a C-program)? What is source code, object code, executable code?
+
+
+How can you compile and link a C-program which is wholly contained in one file, say hello.c? How do you run the resulting executable code?
+
+
+How do you supply the compiler with the description of the printf function? Why do you need to do this? How do you link the printf function?
+
+
+What is stdio.h? Why angle-brackets in #include<stdio.h>? Hint: C preprocessor: including files.
+"Standard input output", a library containing common commands for printing results etc.
+
+
+How can you get the manual page of the C standard library function printf? Hint: there is also a utility printf in a POSIX system and man printf will show you the manual page for the printf utility, not the printf function from the C standard library.
+
+
+What are the built-in data types for numbers in the C-language?
+
+
+What is the result of the operation 1/2 in C?
+An error..? One needs to specify 
+
+In order to use the C mathematical functions, do you need to include any header files? Link any library? Hint: man sin.
+One needs to include this line for regualr math: "#include<math.h>", and the link should be established (how?)
+For complex numbers, also use "#include<complex.h>"
+
+
+What is tgmath.h? If you use tgmath.h do you need to link any library?
+"type generic math", it is basically the a combination of the two libraries "math.h" and "complex.h", and can figure out the type of the input, and use the appropriate function needed. 
+
