@@ -8,9 +8,14 @@ all: out.txt
 out.txt : main
 	./main > out.txt
 
-main	:	main.o
+main	:	main.o epsilon3.o
 
 main.o	:	main.c
+	$(CC) $(CFLAGS) -c $<
+
+
+
+epsilon3.o : epsilon3.c
 	$(CC) $(CFLAGS) -c $<
 
 clean		:

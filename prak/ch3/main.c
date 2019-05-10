@@ -105,4 +105,6 @@ int main(){
 	while(ce<max-1){ce++,sum2=sum2+1.0f/(max-ce);}
 	printf("Sum2 = %g\n",sum2+1.0f);
 
+	int epsilon3 = equal(1.0,1.0,.1,.1);
+	printf("Equal: %i\n",epsilon3);
 }

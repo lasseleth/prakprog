@@ -28,3 +28,4 @@ long double epsilon do while=1.0842e-19
 long double epsilon for=1.0842e-19
 Sum = 14.4037
 Sum2 = 19.8079
+Equal: 1
