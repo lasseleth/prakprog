@@ -1,0 +1,12 @@
+set term svg
+set out "airy.svg"
+set xlabel "x"
+set ylabel "y"
+set key noenhanced
+set key bottom
+set grid
+set terminal svg enhanced background rgb 'white'
+set tics out
+plot [-15:15][-2:2] \
+	 "airy.data" using 1:2 with lines title 'Ai from GSL' \
+	 ,"airy.data" using 1:3 with lines title 'Bi from GSL' \
