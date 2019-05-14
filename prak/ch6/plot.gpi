@@ -1,0 +1,4 @@
+set terminal svg
+set output "plot.svg"
+set terminal svg enhanced background rgb 'white'
+plot "out.io.txt", "out.cmd.txt"
