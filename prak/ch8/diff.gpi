@@ -1,0 +1,8 @@
+set terminal svg
+set output "diff.svg"
+set xlabel 'x'
+set ylabel 'y'
+set title 'Orbit'
+set terminal svg enhanced background rgb 'white'
+set title 'Diff. function'
+plot 'diff.data'
