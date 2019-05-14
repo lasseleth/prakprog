@@ -1,4 +1,6 @@
 set terminal svg
 set output "plot.svg"
+set xlabel "x"
+set ylabel "y"
 set terminal svg enhanced background rgb 'white'
 plot "out.io.txt", "out.cmd.txt"
