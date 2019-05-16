@@ -1,8 +1,0 @@
-set terminal svg
-set output "orb.svg"
-set xlabel 'x'
-set ylabel 'y'
-set title 'Planetary orbit'
-set grid
-set key left
-plot [-4:4] [-4:4] 'orb.data' using (1/$2)*sin($1):(1/$2)*cos($1) with lines notitle 
