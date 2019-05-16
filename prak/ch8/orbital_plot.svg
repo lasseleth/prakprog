@@ -124,7 +124,7 @@
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M518.8,117.0 L527.1,117.0  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M119.8,117.0 L177.8,117.0 M518.8,117.0 L527.1,117.0  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -150,7 +150,7 @@
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M119.8,422.4 L119.8,129.1 M119.8,75.1 L119.8,66.1  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M119.8,422.4 L119.8,66.1  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -163,7 +163,7 @@
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M170.7,422.4 L170.7,129.1 M170.7,75.1 L170.7,66.1  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M170.7,422.4 L170.7,66.1  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -433,10 +433,10 @@
 		L269.4,152.8 L276.7,153.6 L283.7,154.7 L290.4,156.1 L296.9,157.7 L303.1,159.6 L309.0,161.6 L314.7,163.9
 		L320.1,166.3  '/></g>
 	</g>
-	<g id="gnuplot_plot_3" ><title>Relativistic precession of eliptical orbit</title>
+	<g id="gnuplot_plot_3" ><title>Rel. precession of eliptical orbit</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(460.0,124.0)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text><tspan font-family="Arial" >Relativistic precession of eliptical orbit</tspan></text>
+		<text><tspan font-family="Arial" >Rel. precession of eliptical orbit</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
