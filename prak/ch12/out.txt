@@ -1,0 +1,10 @@
+First doing multi-threaded processing using pthreads.
+
+Using two threads, pi has been estimated by throwing a total of 1e+08 darts at a 1x1 square with a r=0.5 circle inscribed inside.
+The estimated pi is pi=3.14167
+
+
+Now doing the same but with the OpenMP protocols instead.
+
+In total, 1e+08 darts were thrown using OpenMP multi-threading.
+Pi was estimated to be pi=3.1416.
