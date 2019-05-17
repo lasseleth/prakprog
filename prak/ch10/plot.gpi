@@ -1,0 +1,10 @@
+set term svg
+set out "plot.svg"
+set xlabel "x"
+set ylabel "y"
+set title "Radial wavefunction of the ground state of atomic hydrogen"
+set title font 'Helvetica bold, 18'
+set term svg background 'white'
+plot\
+"plot.txt" lt 7 lc 7\
+, x*exp(-x) lt 1 lw 2 lc 4 title "Analytical function"\
