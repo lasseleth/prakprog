@@ -1,0 +1,12 @@
+set term svg background rgb "white"
+set out "times.svg"
+set xlabel "Matrix size"
+set ylabel "Normalized diagonalization time"
+set title font 'Helvetica bold, 16'
+set title "Normalized diagonalization time as function of matrix size"
+set autoscale
+set grid
+set key top left
+plot \
+  "times.txt" using 1:2 title "cyclic algorithm" with points, \
+"times.txt" using 1:3 title "power of three function" with points

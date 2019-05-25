@@ -1,0 +1,40 @@
+EIGENVALUE CALCULATION FROM LOW TO HIGH
+
+The number of eigenvalues that are going to be calculated is: 1
+
+The A matrix about to be diagonalized is:
+
+[[0.94525 0.03948 0.55823 0.51545 0.88068 0.32426 0.76361]
+ [0.03948 0.77173 0.16385 0.77144 0.82784 0.96546 0.95172]
+ [0.55823 0.16385 0.64616 0.94366 0.28738 0.71776 0.2724 ]
+ [0.51545 0.77144 0.94366 0.75639 0.92704 0.51582 0.18796]
+ [0.88068 0.82784 0.28738 0.92704 0.7858  0.19214 0.41791]
+ [0.32426 0.96546 0.71776 0.51582 0.19214 0.75555 0.50761]
+ [0.76361 0.95172 0.2724  0.18796 0.41791 0.50761 0.12924]]
+
+The eigenvalues of A obtained analyticaly are:
+
+[ 4.09017 -0.99583 -0.53945 -0.31952  1.13297  0.57695  0.84484]
+
+The lowest eigenvalue obtained after 60 iterations and 0.01568436622619629 seconds is:
+
+[-0.99583  0.       0.       0.       0.       0.       0.     ]
+
+All the eigenvalues obtained after 14 iterations in ascending order are:
+
+[-0.99583 -0.53945 -0.31952  0.57695  0.84484  1.13297  4.09017]
+
+The highest eigenvalue obtained after 17 iterations and 0.0037627220153808594 seconds is:
+
+[4.09017 0.      0.      0.      0.      0.      0.     ]
+
+All the eigenvalues obtained after 17 iterations in descending order are:
+
+[ 4.09017  1.13297  0.84484  0.57695 -0.31952 -0.53945 -0.99583]
+
+The number of iterations needed by the cyclic algorithm was: 17
+The cyclic algorithm took 0.005478382110595703 seconds to reach the solution.
+
+The number of iterations needed by the value-by-value algorithm was: 14
+The value-by-value algorithm took 0.004862546920776367 seconds to reach the solution.
+
