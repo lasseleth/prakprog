@@ -38,7 +38,7 @@ def newton(f, x0, dx, eps):
         fx = fy.copy()
         steps = steps + 1
         if (np.linalg.norm(fx)<eps or np.linalg.norm(Dx_sol)<dx): # steps>stepsmax): #
-            print('Process finish after %i iterations.' % (steps))
+            print('Process finished after %i iterations.' % (steps))
             break
     return x
 
@@ -70,6 +70,6 @@ def newton_w_jacobian(f, x0, eps):
         fx = fy.copy()
         steps = steps + 1
         if (np.linalg.norm(fx)<eps): # steps>stepsmax): #
-            print('Process finish after %i iterations.' % (steps))
+            print('Process finished after %i iterations.' % (steps))
             break
     return x
