@@ -1,0 +1,28 @@
+
+FUNCTIONS SOLVED THROUGH NEWTON METHOD
+Function One:
+Process finish after 12 iterations.
+x =  [1.10041463e-05 9.08336675e+00]
+f(x) =  [-4.53036301e-04  2.53462074e-06]
+Rosenbrock function:
+Process finish after 89 iterations.
+x =  [0.99988855 0.99977731]
+f(x) =  [-1.51645125e-04  2.00984267e-05]
+Himmelblau function:
+Process finish after 5 iterations.
+x =  [2.99999999 2.00000003]
+f(x) =  [-1.98394599e-07  7.24769585e-07]
+
+FUNCTIONS SOLVED THROUGH NEWTON METHOD WITH JACOBIAN
+Function One:
+Process finish after 12 iterations.
+x =  [1.10041473e-05 9.08336582e+00]
+f(x) =  [-4.5304736e-04  2.5347257e-06]
+Rosenbrock function:
+Process finish after 1574 iterations.
+x =  [0.99988716 0.9997735 ]
+f(x) =  [ 5.40925435e-05 -8.34751315e-05]
+Himmelblau function:
+Process finish after 5 iterations.
+x =  [3. 2.]
+f(x) =  [2.95882430e-09 2.43634446e-08]
