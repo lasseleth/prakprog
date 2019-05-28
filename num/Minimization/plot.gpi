@@ -1,0 +1,14 @@
+set term svg background rgb "white"
+set out "plot.svg"
+set xlabel "Time"
+set xlabel font 'Helvetica, 18'
+set ylabel "Activity"
+set ylabel font 'Helvetica, 18'
+set title "Fit of the decay data"
+set title font 'Helvetica bold, 18'
+set autoscale
+set grid
+set key top
+plot \
+  "decaydata.txt" with yerrorbars lw 2 title "Data",\
+  "out.txt" every ::21 with lines lw 3 title "Fit"
