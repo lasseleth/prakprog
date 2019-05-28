@@ -1,0 +1,16 @@
+set term svg background rgb 'white'
+set out 'sine_rk.svg'
+set xlabel "x"
+set xlabel font 'Helvetica, 18'
+set ylabel "y"
+set ylabel font 'Helvetica, 18'
+set title "Solutions from Runge-Kutta_{12} for the functions sine and cosine"
+set title font 'Helvetica bold, 16'
+set autoscale
+set grid
+set key bottom left
+plot \
+ "rk.txt" using 1:2 title "sin(x) with RK"\
+ ,"rk.txt" using 1:3 title "dsin(x)/dx with RK"\
+ ,"sine.txt" using 1:2 with lines lw 2 title "sin(x) analytical"\
+ ,"sine.txt" using 1:3 with lines lw 2 title "cos(x) analytical"
