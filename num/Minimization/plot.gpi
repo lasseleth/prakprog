@@ -11,4 +11,4 @@ set grid
 set key top
 plot \
   "decaydata.txt" with yerrorbars lw 2 title "Data",\
-  "out.txt" every ::21 with lines lw 3 title "Fit"
+  "out.txt" every ::21 with lines lw 2 title "Fit"

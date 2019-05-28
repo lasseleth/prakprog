@@ -364,14 +364,12 @@
 </g>
 	</g>
 	<g id="gnuplot_plot_2" ><title>Fit</title>
-<g fill="none" color="#FFFFFF" stroke="rgb(148,   0, 211)" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(507.9,103.0)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
 		<text><tspan font-family="Arial" >Fit</tspan></text>
 	</g>
 </g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='rgb(  0, 158, 115)'  d='M516.2,99.1 L558.4,99.1 M82.5,137.9 L83.0,138.7 L83.5,139.5 L84.0,140.4 L84.5,141.2 L85.0,142.0
 		L85.5,142.8 L86.0,143.6 L86.5,144.4 L87.0,145.2 L87.5,146.1 L88.0,146.9 L88.5,147.7 L89.0,148.5
 		L89.5,149.3 L90.0,150.0 L90.5,150.8 L91.0,151.6 L91.5,152.4 L92.0,153.2 L92.5,154.0 L93.0,154.8
@@ -496,8 +494,6 @@
 		L568.5,390.8 L569.0,390.9 L569.5,390.9 L570.0,390.9 L570.5,391.0 L571.0,391.0 L571.5,391.1 L572.0,391.1
 		L572.5,391.1 L573.0,391.2 L573.5,391.2 L574.0,391.3 L574.5,391.3  '/></g>
 	</g>
-<g fill="none" color="#FFFFFF" stroke="rgb(  0, 158, 115)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="black" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
