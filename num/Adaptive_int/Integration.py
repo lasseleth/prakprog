@@ -1,5 +1,6 @@
 import math as mt
 import numpy as np
+#Ignore the errors, the script works ;)
 def ra_integrator(f, a, b, acc, eps, f2, f3, error_int): #Recursive adaptive integrator. Depends on a function, start and end points, accuracy etc. 
     f1 = f(a + (b -a)/6)
     f4 = f(a + 5*(b - a)/6)

@@ -6,7 +6,7 @@ sys.setrecursionlimit(100000)
 #Functions to integrate
 def sqrt(x):
     global callnum1
-    callnum1 = callnum1 +1
+    callnum1 = callnum1 +1 #These are not really "errors" per se, they are just cool features
     return x**0.5
 
 def invsqrt(x):
