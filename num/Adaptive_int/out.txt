@@ -64,7 +64,6 @@ The error is estimated to be:  4.1415928025050796e-08
 The actual error is:  1.4891528588023561e-07
 
 
-###################################
 Now onto "Infinite limits" 
 Integrating Gaussian function from 0 to infinity...
 

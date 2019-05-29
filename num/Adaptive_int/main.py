@@ -127,7 +127,7 @@ print("The error is estimated to be: ", acc + np.fabs(result_testfunc)*eps) #pri
 print("The actual error is: ", np.fabs(cc_testfunc - np.pi))
 print("\n")
 
-print("###################################")
+
 #############################################################
 print("Now onto \"Infinite limits\" ")
 inf = np.inf
