@@ -1,0 +1,40 @@
+Integrating function with Recursive Adaptive Integrator (RAI)
+
+------ Intergrating sqrt from 0 to 1 ------
+
+Numerical solution:  0.6666667534044163
+Analytical solution:  0.6666666666666666
+There were 1800 calls to the function.
+The error is estimated to be:  1.6666667534044164e-08
+The actual error is:  8.673774964940151e-08
+
+
+
+------ Intergrating inverse sqrt from 0 to 1 ------
+
+Numerical solution:  1.9999998374049217
+Analytical solution:  2.0
+There were 801228 calls to the function.
+The error is estimated to be:  2.999999837404922e-08
+The actual error is:  1.6259507829019526e-07
+
+
+
+------ Intergrating ln/sqrt from 0 to 1 ------
+
+Numerical solution:  -3.999999782000019
+Analytical solution:  -4.0
+There were 2896568 calls to the function.
+The error is estimated to be:  4.9999997820000195e-08
+The actual error is:  2.1799998117799646e-07
+
+
+
+------ Intergrating test function from 0 to 1 ------
+Test function is: 4*sqrt(1-(1-x)^2)
+
+Numerical solution:  3.141592802505079
+Analytical solution:  3.141592653589793
+There were 3788 calls to the function.
+The error is estimated to be:  4.1415928025050796e-08
+The actual error is:  1.4891528588023561e-07
