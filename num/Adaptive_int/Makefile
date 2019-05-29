@@ -11,4 +11,3 @@ out.txt:	main.py Integration.py
 .PHONEY: clean
 clean:
 	$(RM) *.txt
-	$(RM) *.svg
