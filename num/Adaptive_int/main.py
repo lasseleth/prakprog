@@ -24,6 +24,12 @@ def testfunc(x):
     callnum4 = callnum4 + 1
     return 4.0*(1-(1-x)**2)**0.5
 
+def gaussian(x):
+    global callnum5
+    callnum5 = callnum5 + 1
+    return np.exp(-x**2)
+
+
 print("Integrating function with Recursive Adaptive Integrator (RAI)")
 a = 0.0 #lower bound 
 b = 1.0 #upper bound
@@ -120,3 +126,47 @@ print("There were %i calls to the function." % (callnum4) )
 print("The error is estimated to be: ", acc + np.fabs(result_testfunc)*eps) #prints the calculated error
 print("The actual error is: ", np.fabs(cc_testfunc - np.pi))
 print("\n")
+
+print("###################################")
+#############################################################
+print("Now onto \"Infinite limits\" ")
+inf = np.inf
+
+callnum5 = 0
+error5 = 0
+print("Integrating Gaussian function from 0 to infinity...")
+zeroinf = inf_integrator(gaussian, 0, inf, acc, eps, error5)
+
+print("\nNumerical solution: ", zeroinf)
+print("Analytical solution: ", np.pi**0.5/2.0)
+print("There were %i calls to the function." % (callnum5) )
+print("The error is estimated to be: ", acc + np.fabs(zeroinf)*eps) 
+print("The actual error is: ", np.fabs(zeroinf - np.pi**0.5/2.0))
+print("\n")
+
+#_________________________________________________________
+callnum5 = 0
+error5 = 0
+print("Integrating Gaussian function from -infinity to 0...")
+infzero = inf_integrator(gaussian, -inf, 0, acc, eps, error5)
+
+print("\nNumerical solution: ", infzero)
+print("Analytical solution: ", np.pi**0.5/2.0)
+print("There were %i calls to the function." % (callnum5) )
+print("The error is estimated to be: ", acc + np.fabs(infzero)*eps) 
+print("The actual error is: ", np.fabs(infzero - np.pi**0.5/2.0))
+print("\n")
+
+#_________________________________________________________
+callnum5 = 0
+error5 = 0
+print("Integrating Gaussian function from -infinity to infinity...")
+infinf = inf_integrator(gaussian, -inf, inf, acc, eps, error5)
+
+print("\nNumerical solution: ", infinf)
+print("Analytical solution: ", np.pi**0.5)
+print("There were %i calls to the function." % (callnum5) )
+print("The error is estimated to be: ", acc + np.fabs(infinf)*eps) 
+print("The actual error is: ", np.fabs(infinf - np.pi**0.5))
+print("\n")
+

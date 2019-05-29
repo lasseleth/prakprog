@@ -38,3 +38,58 @@ Analytical solution:  3.141592653589793
 There were 3788 calls to the function.
 The error is estimated to be:  4.1415928025050796e-08
 The actual error is:  1.4891528588023561e-07
+
+
+###################################
+
+Now integrating with the Clenshaw-Curtis variable transformation
+
+---- Intergrating inverse sqrt from 0 to 1, using the Clenshaw-Curtis method ----
+
+Numerical solution:  2.0000001398030784
+Analytical solution:  2.0
+There were 1904 calls to the function.
+The error is estimated to be:  3.000000139803078e-08
+The actual error is:  1.398030784471871e-07
+
+
+
+---- Intergrating test function from 0 to 1, using the Clenshaw-Curtis method ----
+Test function is: 4*sqrt(1-(1-x)^2)
+
+Numerical solution:  3.141592802505079
+Analytical solution:  3.141592653589793
+There were 3788 calls to the function.
+The error is estimated to be:  4.1415928025050796e-08
+The actual error is:  1.4891528588023561e-07
+
+
+###################################
+Now onto "Infinite limits" 
+Integrating Gaussian function from 0 to infinity...
+
+Numerical solution:  0.886226938869493
+Analytical solution:  0.8862269254527579
+There were 3296 calls to the function.
+The error is estimated to be:  1.8862269388694933e-08
+The actual error is:  1.3416735056281937e-08
+
+
+Integrating Gaussian function from -infinity to 0...
+
+Numerical solution:  0.886226938869493
+Analytical solution:  0.8862269254527579
+There were 3296 calls to the function.
+The error is estimated to be:  1.8862269388694933e-08
+The actual error is:  1.3416735056281937e-08
+
+
+Integrating Gaussian function from -infinity to infinity...
+
+Numerical solution:  1.772453584055416
+Analytical solution:  1.7724538509055159
+There were 7080 calls to the function.
+The error is estimated to be:  2.772453584055416e-08
+The actual error is:  2.668500997948797e-07
+
+
