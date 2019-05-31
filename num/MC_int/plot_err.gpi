@@ -3,12 +3,12 @@ set out "plot_err.svg"
 set xlabel "N"
 set xlabel font "Helvetica, 16"
 set ylabel "Error"
-set ylabel font "Helvetica, 16"
+set ylabel font "Helvetica, 16" 
 set title "Checking that the MC error behaves as intended"
 set title font "Helvetica Bold, 16"
 set autoscale
 set grid
-set key right top
+set key center top
 plot \
-  "Error.txt" using 1:2 with lines title "Monte Carlo Error",\
-  "Error.txt" using 1:3 with lines title "(1/sqrt(N))"
+  "error.txt" using 1:2 with lines lw 2 title "Monte Carlo error",\
+  "error.txt" using 1:3 with lines lw 2 title "(1/sqrt(N))"

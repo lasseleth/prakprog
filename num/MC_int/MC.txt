@@ -1,0 +1,32 @@
+
+
+#################################################
+
+--- Monte Carlo for 1D test function ---
+
+Monte Carlo result in 1D: 0.665789
+with calculated error: 0.000745058
+Analytcal result: 0.666667
+with the real error: 0.000877641
+
+#################################################
+
+--- Monte Carlo for 2D test function ---
+
+Monte Carlo result in 2D: 2.94294
+with calculated error: 0.0751899
+
+Analytcal result: 3.14159
+with the real error: 0.198649
+
+#################################################
+
+--- Monte Carlo for 3D test function ---
+
+Monte Carlo result in 3D: 1.36059
+with calculated error: 0.00933087
+
+Analytcal result: 1.3932
+with the real error: 0.0326188
+
+#################################################
