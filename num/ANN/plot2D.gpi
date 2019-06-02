@@ -1,0 +1,14 @@
+set term svg background rgb "white"
+set out "plot1d.svg"
+set xlabel "x"
+set xlabel font "Helvetica, 16"
+set ylabel "f(x)"
+set ylabel font "Helvetica, 16"
+set title "ANN for 2D"
+set title font "Helvetica Bold, 18"
+set autoscale
+set grid
+set key right top
+plot \
+  "outANN.txt" using 1:2:4 with points title "ANN fit",\
+  "outANN.txt" using 1:2:6 with lines title "Target function"
