@@ -1,50 +1,13 @@
-#Main
-import random
-import numpy as np
-import matplotlib.pyplot as plt
-import interpolation 
+import search
+from lspline import linterp, integ_linterp
+from qspline import qspline, integ_qspline, deriv_qspline, eval_qspline
+from cspline import cspline, integ_cspline, deriv_cspline, eval_cspline
 
+x = [0, 2, 4, 6, 8, 10]
+y = [0, 4, 16, 36, 64, 100]
 
+N = len(x)
 
-def main():
-    random.seed(42)
-    N=10
-    x = [0.3+i + 0.5*np.sin(i) for i in range(N)]
-    y = [i + np.cos(i*i) for i in range(N)]
-    
-    for i in range(len(x)): print(x[i]," ", y[i])
-    
-    print("\n\n")
-    
-    z = x[0]
-    z_vec = np.zeros(0)
-    ls_vec = np.zeros(0)
-    inte_vec = np.zeros(0)
-    
-    while z <= x[-1]:
-        ls = interpolation.linterp(N,x,y,z)
-        z_vec = np.append(z_vec, z)
-        ls_vec = np.append(ls_vec, ls)
-        inte = interpolation.linterp_integ(N, x, y, z)
-        inte_vec = np.append(inte_vec, inte)
-        print(z," ", ls, " ")
-        z = z+0.1
-        
-#    print(inte_vec, inte_vec.shape, z_vec.shape)
-    plt.figure(1)
-    plt.subplot(2,1,1)    
-    plt.plot(x,y, '*', label="Points")
-    plt.plot(z_vec,ls_vec, 'r-', label="linear spline")
-#    plt.xlabel("x")
-    plt.ylabel("y")
-    plt.legend()
-    
-    plt.subplot(2,1,2)
-    plt.plot(z_vec,np.cumsum(inte_vec), label="Integrated value")
-    plt.ylabel("sum")
-    plt.xlabel("x")
-    plt.legend()
-    plt.savefig("plot.svg")
-
-
-main()
+for i in range(100):
+    z = i/10
+    print("%.1f %0.1f %0.2f %0.1f %0.3f %0.1f %0.3f %0.3f %0.3f" % (z, linterp(N, x, y, z), integ_linterp(N, x, y, z), eval_qspline(x, y, z)+10, integ_qspline(x, y, z), deriv_qspline(x, y, z), eval_cspline(x, y, z)+20, integ_cspline(x, y, z), deriv_cspline(x, y, z)))

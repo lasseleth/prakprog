@@ -1,0 +1,18 @@
+set term svg background rgb 'white'
+set out 'spline_plot.svg'
+set xlabel "x"
+set xlabel font "Helvetica, 16"
+set ylabel "y"
+set ylabel font "Helvetica, 16"
+set title "Solution for all splines"
+set title font "Helvetica Bold, 16"
+set autoscale
+set grid
+set key top left
+plot \
+  "out_interp.txt" using 1:2  with lines linecolor 6 linewidth 2.5 title "linear spline", \
+  "out_interp.txt" using 1:4 with lines linecolor 2 linewidth 2.5 title "quadratic spline +10", \
+  "out_interp.txt" using 1:7 with lines linecolor 4 linewidth 2.5 title "cubic spline +20", \
+  "exact.txt" using 1:3 with lines linecolor 7 title "scipy linear spline", \
+  "exact.txt" using 1:4 with lines linecolor 1 title "scipy quadratic spline +10", \
+  "exact.txt" using 1:5 with lines linecolor 3 title "scipy cubic spline +20"
