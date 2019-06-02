@@ -7,7 +7,7 @@ all: out.txt plot1D.svg plot2D.svg
 plot2D.svg: plot2D.gpi out.txt
 	$(PLOTTER) $<
 
-plot1D.svg: plot2D.gpi out.txt
+plot1D.svg: plot1D.gpi out.txt
 	$(PLOTTER) $<
 
 out.txt: main.py ANN.py
