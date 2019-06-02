@@ -1,0 +1,17 @@
+set term svg background rgb 'white'
+set out 'spline_integ.svg'
+set xlabel "x"
+set xlabel font "Helvetica, 16"
+set ylabel "y"
+set ylabel font "Helvetica, 16"
+set title "Solution for all integrals"
+set title font "Helvetica Bold, 18"
+set autoscale
+set grid
+set key top left
+plot \
+ "exact.txt" using 1:7 with lines linecolor 8 title "analytical integral", \
+ "out_interp.txt" using 1:3  with lines linecolor 6 title "linear integral", \
+ "out_interp.txt" using 1:5 with lines linecolor 2 title "quadratic integral", \
+ "out_interp.txt" using 1:8 with lines linecolor 4 title "cubic integral"
+ 
