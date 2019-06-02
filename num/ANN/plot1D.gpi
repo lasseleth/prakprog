@@ -1,5 +1,5 @@
 set term svg background rgb "white"
-set out "plot1d.svg"
+set out "plot1D.svg"
 set xlabel "x"
 set xlabel font "Helvetica, 16"
 set ylabel "f(x)"
@@ -10,5 +10,5 @@ set autoscale
 set grid
 set key right top
 plot \
-  "outANN.txt" using 1:3 with points title "ANN fit",\
-  "outANN.txt" using 1:5 with lines title "Target function"
+  "out.txt" using 1:3 with points title "ANN fit",\
+  "out.txt" using 1:5 with lines title "Target function"
