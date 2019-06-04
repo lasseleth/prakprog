@@ -1,0 +1,57 @@
+\documentclass[12pt, a4paper, oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{sidecap}
+\usepackage{titlesec}
+\usepackage{float}
+\usepackage[a4paper, margin=3.5cm]{geometry}
+\usepackage{natbib}
+\bibpunct{[}{]}{ and}{a}{,}{,}
+
+
+\begin{document}
+	\begin{titlepage}
+	\centering
+	\includegraphics[width=0.3\textwidth]{logo.png}\par\vspace{0.5cm}
+	{\scshape\Large Department of Physics and Astronomy \\ \LARGE Aarhus University \par}
+	\vspace{1cm}
+	{\scshape\Large Practical Programming \& Numerical Methods \par}
+	\vspace{0.5cm}
+	{\huge\bfseries The Error Function \par}
+	\vspace{1cm}
+	{\Large\itshape Lasse Leth Skovsgaard Berthelsen \par}
+	\vfill
+	{\large \today \par}
+	\end{titlepage}
+\newpage
+\section*{The Error Function}
+In mathematics, the error function (also called the Gauss error function) 
+is a special function (non-elementary) of sigmoid shape that occurs in probability, 
+statistics, and partial differential equations describing diffusion. \\
+\noindent 
+It is defined as:
+\begin{equation}
+\mbox{erf}=\frac{1}{\sqrt{\pi}}\int_{-x}^{x} e^{-t^2}dt
+\end{equation}
+or,
+\begin{equation}
+\mbox{erf}=\frac{2}{\sqrt{\pi}}\int_{0}^{x} e^{-t^2}dt.
+\end{equation}
+\break \noindent
+In statistics, for nonnegative values of x, the error function has the following interpretation: \\
+for a random variable Y that is normally distributed with mean 0 and variance 0.5, 
+erf$(x)$ describes the probability of Y falling in the range $[-x, x]$.\\
+\noindent
+There are several closely related functions, such as the complementary error function, the imaginary error function, and others. 
+
+\subsection*{Name}
+The name "error function" and its abbreviation erf were proposed by J. W. L. Glaisher in 1871 on account of its connection with "the theory of Probability, and notably the theory of Errors." The error function complement was also discussed by Glaisher in a separate publication in the same year. For the "law of facility" of errors whose density is given by
+\begin{equation}
+f(x) = \left(\frac{c}{\pi}\right)^{1/2}e^{-cx^2}
+\end{equation} 
+(the normal distribution), Glaisher calculates the chance of an error lying between \textit{p} and \textit{q} as:
+\begin{equation}
+\frac{c}{\pi}^{1/2} \int_p ^q e^{-cx^2} dx = \frac{1}{2}\left(\mbox{erf}\left(q\sqrt{c}\right)-\mbox{erf}\left(p\sqrt{c}\right)\right)
+\end{equation} 
+\end{document}
