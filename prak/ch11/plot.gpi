@@ -1,0 +1,10 @@
+set term svg
+set term svg background 'white'
+set out "plot.svg"
+set xlabel "Time"
+set ylabel "Activity"
+set title "Activity of radioactive source"
+set title font 'Helvetica bold, 18'
+plot\
+"exp.data" title "Experimental data"\
+, "plot.txt" with lines title "Least-squares fit"\
