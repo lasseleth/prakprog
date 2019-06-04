@@ -1,0 +1,10 @@
+set term pdf
+set term pdf background 'white'
+set out "plot.pdf"
+set title "Error Function"
+set title font "Helvetica Bold, 18"
+set xlabel 'x'
+set xlabel font "Helvetica, 16"
+set ylabel 'y'
+set ylabel font "Helvetica, 16"
+plot [0.5:1.5] 'out.txt' using 1:2 with lines title 'error-function'

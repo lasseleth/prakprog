@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{graphicx}
+\usepackage{svg} %for svg files
 \usepackage{sidecap}
 \usepackage{titlesec}
 \usepackage{float}
@@ -13,7 +14,6 @@
 \begin{document}
 	\begin{titlepage}
 	\centering
-	\includegraphics[width=0.3\textwidth]{logo.png}\par\vspace{0.5cm}
 	{\scshape\Large Department of Physics and Astronomy \\ \LARGE Aarhus University \par}
 	\vspace{1cm}
 	{\scshape\Large Practical Programming \& Numerical Methods \par}
@@ -53,5 +53,15 @@ f(x) = \left(\frac{c}{\pi}\right)^{1/2}e^{-cx^2}
 (the normal distribution), Glaisher calculates the chance of an error lying between \textit{p} and \textit{q} as:
 \begin{equation}
 \frac{c}{\pi}^{1/2} \int_p ^q e^{-cx^2} dx = \frac{1}{2}\left(\mbox{erf}\left(q\sqrt{c}\right)-\mbox{erf}\left(p\sqrt{c}\right)\right)
-\end{equation} 
+\end{equation}
+
+\begin{figure}
+\begin{centering}
+\includegraphics[width=\linewidth]{plot.pdf}
+\caption{Homemade figure of the ERF}
+\label{fig:1}
+\end{centering}
+\end{figure}
+
+
 \end{document}
