@@ -1,0 +1,15 @@
+set term pdf
+set term pdf background 'white'
+set out "plot.pdf"
+set title "Eigenvalues"
+set title font "Helvetica Bold, 18"
+set xlabel 'Size of matrix n*n'
+set xlabel font "Helvetica, 16"
+set ylabel 'Value of largest Eigenvalue'
+set ylabel font "Helvetica, 16"
+set grid
+set key top left box opaque
+set border back
+set xrange [-1:51]
+set yrange [-1:30]
+plot 'out.txt' with points title 'Largest Eigenvalues'

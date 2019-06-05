@@ -63,12 +63,12 @@ double coolshit(int ib) {
 int main(int argc, char** argv)
 {
 int n = (argc>1? atoi(argv[1]):5);
-printf("\n");
+//printf("\n");
 for(int i=1; i<n+1; i++) {
     double eign = coolshit(i);
-    printf("%g\n" , eign);
+    printf("%d  %g\n" , i, eign);
 }
-printf("\n");
+//printf("\n");
 
 return 0;
 }
