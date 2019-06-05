@@ -12,4 +12,6 @@ set key top left box opaque
 set border back
 set xrange [-1:51]
 set yrange [-1:30]
-plot 'out.txt' with points title 'Largest Eigenvalues'
+plot [][] \
+    'out.txt' using 1:2 with points title 'Largest Eigenvalues',\
+    'out.txt' using 1:(a=$3, x=$1, b=$4, a*x+b) with lines title 'Fit'
