@@ -8,7 +8,7 @@ all: out.txt
 #If you wish to change the size of the matrix, make clean and the type "make n= >>value<<"
 
 out.txt: main Makefile
-	./main $(n) 2> $@
+	./main $(n) > $@
 
 main: main.o Jacobi.o
 
