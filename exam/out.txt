@@ -1,0 +1,11 @@
+
+The interpolated value at a random location between 0 and 10
+The function is cos(x)*sin(y)
+
+Interpolated value of point p(2.48367, 9.99331) is: 0.98408
+While the nearby values are: 0.9329, 0.9776, 0.9463 and 0.9916 
+
+Check the plot for interpolated values in a nice colormapped plot
+
+
+If you wish to change the function, go to the main.py file and change the 'func1' to func2 or 3
