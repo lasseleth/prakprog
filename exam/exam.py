@@ -13,19 +13,30 @@ for i in range(len(x)):
         F[i,j] = func(x[i],y[j]) #Fill in the matrix with values of the function
 
 #print(F)
-p = [10, 10]
 
-
-bilinear(x, y, F, p)
+n=5
+for i in range(n):
+    for j in range(n):
+        p = [i+0.5, j+0.5]
+        q = bilinear(x, y, F, p)
+        print(q)
 
 def bilinear(x, y, F, p):
     px = p[0]
     py = p[1]    
-    x1 = int(np.floor(px)) 
-    x2 = int(np.floor(px+1))
+    if px >= len(x)-2:
+        x1 = len(x)-2
+        x2 = len(x)-1
+    else:
+        x1 = int(np.floor(px)) 
+        x2 = int(np.floor(px+1))
     
-    y1 = int(np.floor(py))
-    y2 = int(np.floor(py+1))
+    if py >= len(y)-2:
+        y1 = len(y)-2
+        y2 = len(y)-1
+    else:
+        y1 = int(np.floor(py))
+        y2 = int(np.floor(py+1))
     
     F11 = F[x1, y1]
     F12 = F[x1, y2]
@@ -43,8 +54,8 @@ def bilinear(x, y, F, p):
         
     q = 1/((x2-x1)*(y2-y1))*arrays[0]
 
-    print(q)
-    print(F[x1,y1], F[x2,y2])
+#    print(q)
+#    print(F[x1,y1], F[x2,y2])
     return q
 
 
