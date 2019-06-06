@@ -1,9 +1,9 @@
 
 The interpolated value at a random location between 0 and 10
-The function is the Rosenbrock function, (1-x)^2+100*(y-x^2)^2
+The function is cos(x)*sin(y)
 
-Interpolated value of point p(56.6003, 77.5855) is: 1309.8
-While the nearby values are: 1468, 1627, 1063 and 1199 
+Interpolated value of point p(8.28685, 74.2971) is: 0.43113
+While the nearby values are: 0.4913, 0.4575, 0.313 and 0.2914 
 
 Check the plot for interpolated values in a nice colormapped plot
 

@@ -9,7 +9,7 @@ def func3(x,y): return x*y**2
 #def func(x,y): return        #something
 
 ########################################################
-func = func1 ################# Here you can change the function #################
+func = func2 ################# Here you can change the function #################
 ########################################################
 
 x = np.linspace(-10,10, 100)
