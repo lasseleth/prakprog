@@ -4,35 +4,47 @@ import matplotlib.pyplot as plt
 x = np.linspace(0,10, 10)
 y = np.linspace(0,10, 10)
 
-def func(x,y): return x*y**2
+def func(x,y): return x*y**2 #just some function
+
+
 F = np.zeros([len(x), len(y)])
 for i in range(len(x)): 
     for j in range(len(y)):
-        F[i,j] = func(x[i],y[j])
+        F[i,j] = func(x[i],y[j]) #Fill in the matrix with values of the function
+
+#print(F)
+p = [10, 10]
 
 
+bilinear(x, y, F, p)
 
-#def bilinear(x, y, F, px, py)
-#px = 1
-#py = 2
-#
-#x1=1
-#x2=2
-#y1=1
-#y2=2
-#x_vec = np.array([x1, x1, x2, x2])
-#y_vec = np.array([y1, y2, y1, y2])
-#
-#xy_vec = np.array([x1*y1, x1*y2, x2*y1, x2*y2])
-#
-#mat_A = np.array([[1, 1, 1, 1], x_vec, y_vec, xy_vec])
-#mat_A=np.transpose(mat_A)
-#
-#b = np.dot(np.transpose(np.linalg.inv(mat_A)), np.array([[1],[px],[py],[px*py]]))
-#
-#f = b[0]*func(x1,y1)+b[1]*func(x1,y2)+b[2]*func(x2,y1)+b[3]*func(x2,y2)
+def bilinear(x, y, F, p):
+    px = p[0]
+    py = p[1]    
+    x1 = int(np.floor(px)) 
+    x2 = int(np.floor(px+1))
+    
+    y1 = int(np.floor(py))
+    y2 = int(np.floor(py+1))
+    
+    F11 = F[x1, y1]
+    F12 = F[x1, y2]
+    F21 = F[x2, y1]
+    F22 = F[x2, y2]
+    
+    x_mat = np.array([x2-px, px-x1])
+    
+    fq_mat = np.array([[F11, F12],
+                       [F21, F22]])
+    y_mat = np.array([[y2-py],
+                      [py-y1]])
+    
+    arrays = (np.dot(np.dot(x_mat, fq_mat), y_mat))
+        
+    q = 1/((x2-x1)*(y2-y1))*arrays[0]
 
-
-
+    print(q)
+    print(F[x1,y1], F[x2,y2])
+    return q
 
 
