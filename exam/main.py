@@ -9,7 +9,7 @@ def func3(x,y): return x*y**2
 #def func(x,y): return        #something
 
 ########################################################
-func = func2 ################# Here you can change the function #################
+func = func1 ################# Here you can change the function #################
 ########################################################
 
 x = np.linspace(-10,10, 100)
@@ -44,7 +44,7 @@ elif(func==func3): print("The function is x*y^2")
 else: print("Some function")
 
 
-p = np.random.rand(2)*10 #Generating random coordinates between -10 and 10
+p = np.random.rand(2)*100 #Generating random coordinates between -10 and 10
 
 q, F = bilinear(x,y,F,p) #Interpolating at point p, set with vectors x and y and matrix F defined above
 
@@ -56,14 +56,14 @@ print("\n\nIf you wish to change the function, go to the main.py file and change
 
 X, Y = np.meshgrid(i_st, j_st[0:n])
 plt.figure() #Plotting the contour colormap
-plt.contourf(i_st, j_st[0:n], Q, 100)
+plt.contourf(i_st/10, j_st[0:n]/10, Q, 100)
 plt.colorbar()
 plt.xlabel("x")
 plt.ylabel("y")
 if (func == func1):
     plt.title("Rosenbrock", fontsize=20) #just for cheese
 elif (func == func2):
-    plt.title("cos(x)*sin(x)", fontsize=20)
+    plt.title("cos(x)*sin(y)", fontsize=20)
 elif (func==func3):
     plt.title("x*y**2", fontsize=20)
 plt.savefig("plot.pdf")        
