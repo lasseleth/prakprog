@@ -1,10 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-x = np.linspace(0,10, 10)
-y = np.linspace(0,10, 10)
+x = np.linspace(-10,10, 100)
+y = np.linspace(-10,10, 100)
 
-def func(x,y): return x*y**2 #just some function
+def func(x,y): return np.cos(x)*np.sin(y) #just some function
 
 
 F = np.zeros([len(x), len(y)])
@@ -13,13 +13,6 @@ for i in range(len(x)):
         F[i,j] = func(x[i],y[j]) #Fill in the matrix with values of the function
 
 #print(F)
-
-n=5
-for i in range(n):
-    for j in range(n):
-        p = [i+0.5, j+0.5]
-        q = bilinear(x, y, F, p)
-        print(q)
 
 def bilinear(x, y, F, p):
     px = p[0]
@@ -59,3 +52,32 @@ def bilinear(x, y, F, p):
     return q
 
 
+n = 100
+#k = np.linspace(0,3,1)
+i_st = np.array([])
+j_st = np.array([])
+Q = np.zeros( ( n, n) ) 
+
+for i in range(n):
+    q_st = np.array([])
+    for j in range(n):
+        p = [i, j]
+        q = bilinear(x, y, F, p)
+#        print(q)
+        q_st = np.append(q_st, q)
+        j_st = np.append(j_st, j)
+#    print(q_st)
+    i_st = np.append(i_st, i)
+    
+    Q[int(i),:] = q_st
+print(Q)
+#Q = np.array(q_st[1:3]) 
+#for i in range(len(k)):
+#    Q = np.column_stack((Q, q_st[(1+3*i):(10+3*i)]))
+    
+    
+
+X, Y = np.meshgrid(i_st, j_st[0:n])
+plt.contourf(i_st, j_st[0:n], Q, 100)
+
+plt.colorbar()
